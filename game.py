@@ -1,2 +1,4 @@
 class BaseballGame:
-    pass
+    def guess(self, param):
+        if not param:
+            raise TypeError()
