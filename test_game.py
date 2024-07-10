@@ -4,7 +4,9 @@ from game import BaseballGame
 
 
 class TestBaseballGame(TestCase):
-    def test_exception_when_input_is_none(self):
+    def setUp(self):
         self.game = BaseballGame()
+        super().setUp()
+    def test_exception_when_input_is_none(self):
         with self.assertRaises(Exception) as context:
             self.game.guess(None)
