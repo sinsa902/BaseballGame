@@ -1,4 +1,4 @@
 class BaseballGame:
-    def guess(self, param):
-        if not param:
+    def guess(self, guessNumber):
+        if not guessNumber:
             raise TypeError()
